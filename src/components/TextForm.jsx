@@ -66,7 +66,7 @@ export default function TextForm(props) {
   <button disabled={text.length===0} className="btn btn-warning"onClick={handleInverseClick}>Inverse Case</button>
 </div>
    <div className="container my-2" style={{color:props.mode==='light'?'black':'white'}}>
-    <h1>Your text summary</h1>
+    <h3><strong>Your text summary</strong></h3>
     <p>{text.split(' ').filter((element)=>{return element.length!==0}).length} words and {text.length} characters</p>
     <p>{text.split(' ').filter((element)=>{return element.length!==0}).length*0.08} minutes to read it.</p>
     <h2>Preview:</h2>
